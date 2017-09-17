@@ -12,6 +12,7 @@ function setup() {
 }
 
 function draw() {
+  background( follow.getValue() * 255 )
   if (mouseIsPressed) {
     fill(0);
     mySound.play();
