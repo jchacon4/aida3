@@ -9,6 +9,8 @@ function setup() {
   mySound.setVolume(0.1);
   drums = EDrums('x*o*x*o-')
   follow = Follow( drums )
+  a = Synth({ maxVoices:4, waveform:'PWM', attack:ms(1), decay:ms(1000) })
+  a.play( [440, 880, 1320], 1/4 )
 }
 
 function draw() {
