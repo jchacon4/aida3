@@ -5,10 +5,10 @@ function preload() {
 
 
 function setup() {
-  createCanvas(640, 480);
+  createCanvas( windowWidth, windowHeight )
   mySound.setVolume(0.1);
-  var fs = fullscreen();
-  fullscreen(fs);
+  drums = EDrums('x*o*x*o-')
+  follow = Follow( drums )
 }
 
 function draw() {
